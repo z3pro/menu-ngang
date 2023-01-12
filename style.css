@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+     font-family: Arial;
+}
+#main a {
+    text-decoration: none;
+    color: #fff;
+}
+#main {
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+}
+#main > ul {
+    display: flex;
+}
+#main li {
+    position: relative;
+    padding:0 20px;
+    cursor: pointer;
+    line-height: 30px;
+    list-style-type: none;
+} 
+#main ul ul {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 30px;
+    width: 250px;
+    display: none;
+}
+#main li:hover ul {
+    display: inline-block;
+}
+#main li:hover {
+    background-color: red;
+}
